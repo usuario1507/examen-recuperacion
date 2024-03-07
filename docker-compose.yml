@@ -1,0 +1,19 @@
+version: '2.24'
+
+services:
+   db:
+    image: postgres:14.3
+    restart: always
+    environment:
+      POSTGRES_DB: aglJardineria
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: pswJardineria
+    networks:
+       my-network:
+       ipam:
+      
+   driver: default
+       
+   config:
+        
+   subnet: 192.168.8.0/24
